@@ -4,6 +4,7 @@
 import csv
 from typing import List, Dict, Any
 
+
 class Server:
     """Server class to paginate a database of popular baby names."""
     DATA_FILE = "Popular_Baby_Names.csv"
@@ -30,16 +31,20 @@ class Server:
             }
         return self.__indexed_dataset
 
-    def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict[str, Any]:
+    def get_hyper_index(
+        self, index: int = None, page_size: int = 10
+    ) -> Dict[str, Any]:
         """
-        Returns a deletion-resilient page of the dataset starting from the given index.
+        Returns a deletion-resilient page of the dataset starting
+        from the given index.
 
         Args:
             index (int): The starting index of the page (default: None)
             page_size (int): Number of items per page (default: 10)
 
         Returns:
-            Dict[str, Any]: Dictionary with index, next_index, page_size, and data
+            Dict[str, Any]: Dictionary with index, next_index,
+            page_size, and data
         """
         assert index is not None and index >= 0
         indexed_dataset = self.indexed_dataset()

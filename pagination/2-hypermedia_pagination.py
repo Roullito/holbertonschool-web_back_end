@@ -7,6 +7,7 @@ from typing import Any, List, Dict
 
 index_range = __import__('0-simple_helper_function').index_range
 
+
 class Server:
     """Server class to paginate a database of popular baby names."""
     DATA_FILE = "Popular_Baby_Names.csv"
@@ -43,8 +44,10 @@ class Server:
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Any]:
         """
-        Returns a dictionary with pagination information and data for the requested page.
-        Includes page size, current page, data, next/previous page numbers, and total pages.
+        Returns a dictionary with pagination information and
+        data for the requested page.
+        Includes page size, current page, data, next/previous
+        page numbers, and total pages.
 
         Args:
             page (int): Current page number (default: 1)
