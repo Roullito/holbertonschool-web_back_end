@@ -1,0 +1,3 @@
+// script that lists all documents with args in a collection
+
+db.school.find({name: "Holberton school"})
