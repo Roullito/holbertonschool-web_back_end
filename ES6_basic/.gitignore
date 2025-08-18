@@ -4,3 +4,4 @@ nodesource_setup.sh
 node_modules
 .eslintrc.js
 babel.config.js
+eslint.config.mjs
