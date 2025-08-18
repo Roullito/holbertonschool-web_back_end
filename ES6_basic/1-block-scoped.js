@@ -1,10 +1,10 @@
 export default function taskBlock(trueOrFalse) {
-  var task = false;
-  var task2 = true;
+  const task = false;
+  const task2 = true;
 
   if (trueOrFalse) {
-    const task = true;
-    const task2 = false;
+    const task = true; // portée de bloc, non réassignable
+    const task2 = false; // portée de bloc, non réassignable
   }
 
   return [task, task2];
