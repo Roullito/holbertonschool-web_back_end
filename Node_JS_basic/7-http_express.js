@@ -42,7 +42,6 @@ function parseStudents(data) {
 app.get('/', (req, res) => {
   res.set('Content-Type', 'text/plain');
   res.status(200).send('Hello Holberton School!');
-  return;
 });
 
 app.get('/students', (req, res) => {
